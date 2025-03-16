@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Noto Sans", sans-serif;
+}
+main {
+  padding: 10px;
+  background-color: silver;
+}
+
+.link{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.link:hover{
+    background-color: royalblue;
+}
+
+
+.header{
+    list-style-type: none;
+    background-color: cadetblue;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 36px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+}
+.menu{
+  width: 350px;
+  height: 100vh;
+  background-color: bisque;
+  position:fixed;
+  top:0;
+  left:-350px;
+  transition: left 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.isOpen{
+  left:0;
+}
+.burger{
+  z-index: 10;
+  cursor: pointer;
+}
+.mmenu_list{
+  padding: 500px;
+}
+.menu item{
+  list-style-type: none;
+  padding:8px;
+}
+.con{
+  front-size:28px;
+  margin: 0 auto;
+    
+}
+.con1{
+  list-style-type:none;
+  padding: 0px;
+}
+@media (min-width: 768px) {
+  .header{
+    background-color: orange
+  }
+}
+.cards{
+  display: grid;
+  padding: 20px;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+}
+.card-item{
+  width: 150px;
+  height: 150px;
+  background-color: rosybrown;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1 px solid black;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.footer{
+  padding: 8px;
+  color: white;
+  backgroud-color: black;
+}
+.footer_wrapper{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.logo{
+  width: 100px;
+  height: 100px;
+}
+
+.left-side{
+   display: flex;
+  align-items: center;
+}
+.post {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+}
